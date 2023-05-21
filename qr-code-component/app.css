@@ -18,7 +18,7 @@ body {
   background-color: var(--light-gray);
 }
 .qr-code {
-  max-width: 16rem;
+  max-width: 18rem;
   height: 60%;
   position: absolute;
   top: 50%;
@@ -38,9 +38,6 @@ body {
 .qr-code__content {
   height: 35%;
   padding: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
 }
 .qr-code__title {
@@ -49,8 +46,8 @@ body {
 }
 .qr-code__description {
   font-size: 0.75rem;
+  margin-top: 1rem;
   color: var(--grayish-blue);
-  transform: translateY(-0.5rem);
 }
 .attribution {
   margin-top: auto;

@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click to see solution](https://www.frontendmentor.io/solutions/results-summary-component-using-html-and-css-vc2BHb-VNM)
+- Solution URL: [Click to see solution](https://www.frontendmentor.io/solutions/qr-code-component-using-html-and-css-NWXR4WBomJ)
 - Live Site URL: [Click to visit live site](https://qr-code-component-vtpqui.netlify.app/)
 
 ## My process
