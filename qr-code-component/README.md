@@ -1,6 +1,6 @@
-# Frontend Mentor - Results summary component solution
+# Frontend Mentor - QR code component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets//results-summary-component-screenshot.png)
+![](./design//qr-code-component-screenshot.png)
 
 ### Links
 
 - Solution URL: [Click to see solution](https://www.frontendmentor.io/solutions/results-summary-component-using-html-and-css-vc2BHb-VNM)
-- Live Site URL: [Click to visit live site](https://results-summary-component-vtpqui.netlify.app/)
+- Live Site URL: [Click to visit live site](https://qr-code-component-vtpqui.netlify.app/)
 
 ## My process
 
@@ -37,7 +37,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
 
 ### Continued development
 
