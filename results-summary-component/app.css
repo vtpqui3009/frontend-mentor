@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf)
+    format("truetype");
+}
+:root {
+  /*neutral colors*/
+  --white: 0, 0%, 100%;
+  --pale-blue: 222, 100%, 96%;
+  --light-lavender: 241, 100%, 89%;
+  --dark-gray-blue: 224, 30%, 27%;
+  /* primary colors */
+  --light-red: 0, 100%, 67%;
+  --orangey-yellow: 39, 100%, 56%;
+  --green-teal: 166, 100%, 37%;
+  --cobalt-blue: 234, 85%, 45%;
+  /* gradient colors background */
+  --light-slate-blue: 252, 100%, 67%;
+  --light-royal-blue: 241, 81%, 54%;
+  /* gradient colors circle */
+  --violet-blue: 256, 72%, 46%, 1;
+  --persian-blue: 241, 72%, 46%, 0;
+}
+@media (min-width: 600px) {
+  body {
+    height: 100vh !important;
+  }
+}
+body {
+  background-color: hsl(var(--white));
+  font-family: "HankenGrotesk", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  list-style-type: none;
+}
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 60rem;
+    max-height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 23px -4px rgba(200, 199, 255, 0.65);
+    box-shadow: 0px 0px 23px -4px rgba(200, 199, 255, 0.65);
+  }
+}
+.container {
+  border-radius: 20px;
+  height: 95%;
+  background-color: hsl(var(--white));
+}
+.result,
+.summary {
+  flex-basis: 50%;
+}
+@media (min-width: 600px) {
+  .result {
+    border-radius: 20px;
+  }
+}
+.result {
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--light-slate-blue)),
+    hsl(var(--light-royal-blue))
+  );
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.result-title {
+  color: hsl(var(--light-lavender));
+  font-weight: 600;
+}
+.result-progress {
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--violet-blue)),
+    hsl(var(--persian-blue))
+  );
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result-progress__current {
+  color: hsl(var(--white));
+  font-weight: 600;
+  font-size: var(--size-900);
+}
+.result-progress__total {
+  color: hsl(var(--light-lavender));
+  font-size: 0.75rem;
+}
+.result-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.result-footer__status {
+  font-size: var(--size-500);
+  color: hsl(var(--white));
+}
+.result-footer__description {
+  color: hsl(var(--light-lavender));
+  font-size: 0.75rem;
+  max-width: 70%;
+  text-align: center;
+  margin-top: 10px;
+}
+.summary {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.summary-title {
+  font-weight: 700;
+  color: hsl(var(--dark-gray-blue));
+}
+.summary-item {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px;
+  background-color: hsl(var(--item-color), 0.1);
+  border-radius: 5px;
+}
+.summary-item[data-item-type="accent-1"] {
+  --item-color: var(--light-red);
+}
+.summary-item[data-item-type="accent-2"] {
+  --item-color: var(--orangey-yellow);
+}
+.summary-item[data-item-type="accent-3"] {
+  --item-color: var(--green-teal);
+}
+.summary-item[data-item-type="accent-4"] {
+  --item-color: var(--cobalt-blue);
+}
+.summary-item__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.summary-item__header-logo {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+}
+.summary-item__header-title {
+  color: hsl(var(--item-color));
+}
+.summary-item__progress {
+  color: hsl(var(--dark-gray-blue), 0.6);
+}
+.summary-item__progress :is(span) {
+  color: hsl(var(--dark-gray-blue), 1);
+}
+.summary-action {
+  margin-top: auto;
+  background-color: hsl(var(--dark-gray-blue));
+  outline: none;
+  border: 0;
+  border-radius: 20px;
+  padding: 12px;
+  color: hsl(var(--white));
+  transition: all 0.25s linear;
+  font-weight: 700;
+  cursor: pointer;
+}
+.summary-action:hover {
+  background-color: hsl(var(--light-royal-blue));
+}
+.attribution {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  height: 5%;
+}
