@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body>
+  <main class="container">
+    <div class="modal" id="rating-modal">
+      <img class="modal-start__icon" src="./images/icon-star.svg" alt="start-icon" />
+      <h2 class="modal-title">How did we do?</h2>
+      <p class="modal-description">
+        Please let us know how we did with your support request. All feedback
+        is appreciated to help us improve our offering!
+      </p>
+      <ul class="modal-list">
+        <li class="modal-item">1</li>
+        <li class="modal-item">2</li>
+        <li class="modal-item">3</li>
+        <li class="modal-item">4</li>
+        <li class="modal-item">5</li>
+      </ul>
+      <button class="modal-button" id="submit-button">Submit</button>
+    </div>
+
+    <div class="modal content-center hide" id="thanks-modal">
+      <img class="modal-illustration__image" src="./images/illustration-thank-you.svg" alt="illustration-thank-you" />
+      <span class="modal-badge">
+        You selected <span id="selected-rating"></span> out of 5</span>
+      <h2 class="modal-title">Thank you!</h2>
+      <p class="modal-description text-center decrease-spacing">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by
+    <a target="_blank" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://github.com/vtpqui3009/frontend-mentor/tree/main/interactive-rating-component" target="_blank">Van
+      Tran Phu Qui</a>.
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

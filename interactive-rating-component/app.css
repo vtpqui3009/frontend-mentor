@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: 25, 97%, 53%;
+  --secondary-color: 228, 45%, 44%;
+  --white-color: 0, 0%, 100%;
+  --light-grey: 217, 12%, 63%;
+  --medium-grey: 216, 12%, 54%;
+  --dark-blue: 213, 19%, 18%;
+  --very-dark-blue: 216, 12%, 8%;
+  --default-font-size: 15px;
+  --default-font-family: "Overpass", sans-serif;
+  --font-weight--normal: 400;
+  --font-weight--bold: 700;
+}
+
+body {
+  font-size: 62.5%;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(var(--very-dark-blue));
+  font-size: var(--default-font-size);
+  font-family: var(--default-font-family);
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content-center {
+  display: grid;
+  place-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.decrease-spacing {
+  margin-top: -0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  color: hsl(var(--white-color)) !important;
+  background-color: hsl(var(--medium-grey)) !important;
+}
+
+.modal {
+  background-color: hsl(var(--dark-blue));
+  max-width: 25rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    background-color: hsl(var(--dark-blue));
+    max-width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.modal-start__icon {
+  padding: 0.8rem;
+  background-color: hsl(var(--medium-grey), 0.1);
+  border-radius: 50%;
+}
+
+.modal-title {
+  color: hsl(var(--white-color));
+  font-weight: var(--font-weight--bold);
+  font-size: 1.6rem;
+}
+
+.modal-description {
+  color: hsl(var(--medium-grey));
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+.modal-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-item {
+  width: 20%;
+  aspect-ratio: 1;
+  color: hsl(var(--medium-grey));
+  font-weight: var(--font-weight--bold);
+  background-color: hsl(var(--medium-grey), 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+}
+
+.modal-item:hover {
+  color: hsl(var(--white-color));
+  background-color: hsl(var(--primary-color));
+}
+
+.modal-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  color: hsl(var(--white-color));
+  background-color: hsl(var(--primary-color));
+  font-weight: var(--font-weight--bold);
+  text-transform: uppercase;
+  border-radius: 2rem;
+  transition: all 0.25s linear;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: hsl(var(--white-color));
+  color: hsl(var(--primary-color));
+}
+
+.modal-badge {
+  display: block;
+  margin-top: 1.5rem;
+  color: hsl(var(--primary-color));
+  background-color: hsl(var(--medium-grey), 0.3);
+  padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 2rem;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+  color: hsl(var(--white-color));
+}
+
+.attribution a {
+  color: hsl(var(--secondary-color));
+}
